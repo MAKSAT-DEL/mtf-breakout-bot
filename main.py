@@ -82,7 +82,7 @@ class TradingBot:
             
             # Filters
             if row["adx"] < p["adx_threshold"] or row["volume"] < row["vol_ma"] * p["min_vol_filter"]:
-                equity_curve.append(self.capital) # ✅ HATA DÜZELTİLDİ: Filtre geçilse bile equity güncellenir
+                equity_curve.append(self.capital) 
                 continue
             
             up = int(row["close"] > row["ema_1h"]) + int(row["close"] > row["ema_4h"]) + int(row["close"] > row["ema_1d"])
@@ -156,7 +156,6 @@ class TradingBot:
         print(f"Final Capital: ${self.capital:,.0f}")
         print("="*50)
         
-        # ✅ HATA DÜZELTİLDİ: Index ve equity uzunlukları senkronize edildi
         plot_start = 800
         plot_len = len(self.equity_curve) - plot_start - 1
         plt.figure(figsize=(12, 6))
