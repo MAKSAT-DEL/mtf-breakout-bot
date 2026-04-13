@@ -1,6 +1,6 @@
 """
 🚀 Multi-Timeframe Breakout Trading Bot
-Author: [Senin Adın]
+Author: Maksat Narmyradov
 Description: 
 A trend-following breakout strategy utilizing Multi-Timeframe Analysis (1H, 4H, 1D).
 Features:
