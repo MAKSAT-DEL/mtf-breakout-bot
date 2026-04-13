@@ -1,3 +1,4 @@
+
 """
 🚀 Multi-Timeframe Breakout Trading Bot
 Author: Maksat Narmyradov
@@ -155,6 +156,7 @@ class TradingBot:
         print(f"CAGR: {cagr:.1f}%")
         print(f"Final Capital: ${self.capital:,.0f}")
         print("="*50)
+        
         
         plot_start = 800
         plot_len = len(self.equity_curve) - plot_start - 1
